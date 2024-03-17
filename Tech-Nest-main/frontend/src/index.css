@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-1 {
+    background-image: linear-gradient(
+            218.66deg,
+            rgba(2, 19, 26, 0.1) 96.47%,
+            rgba(33, 77, 96, 0) 118.8%,
+            rgba(33, 77, 96, 0.1) 118.8%
+        ),
+        linear-gradient(
+            221.44deg,
+            #214d60 55.53%,
+            rgba(33, 77, 96, 0) 106.2%,
+            #214d60 108.63%,
+            rgba(33, 77, 96, 0.0322455) 108.63%
+        );
+}
+
+.auth-input-box {
+    @apply px-1 py-2 border border-gray-200 font-medium text-base rounded-md;
+}
+.active {
+    @apply bg-lime-500 rounded-md;
+}
+.admin-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    left: 14px;
+}
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+    );
+    backdrop-filter: blur(7px);
+    z-index: 10;
+}
